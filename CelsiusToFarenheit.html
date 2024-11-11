@@ -1,0 +1,50 @@
+ <!doctype html>
+
+ <html>
+    <head>
+        <title> Celcius to Farenheit </title>
+        <style>
+        .button {
+           background-color: #04AA6D;
+           border: #000000;
+           color: white;
+           padding: 15px 32px;
+           text-align: center;
+           display: inline-block;
+           font-size: 16px;
+           margin: 4px 2px;
+           cursor: pointer; 
+        
+        }
+        </style>
+    </head>
+        <br><br>
+    <body>
+        <center>
+        <h1> Celcius to Farenheit </h1>
+        <br><br>
+        <label for="Celsius"> Input Celsius </label>
+        <input id="Celsius" type="text" placeholder="Celsius" size="10">
+        <button onclick="conversion()"> Convert </button>
+        <br><br>
+        <p>The Result is :
+        <span id = "conversion" SPAN STYLE="font-weight:bold"></span>
+        </p>
+        <br><br>
+        <a href="index.html">
+        <button class="button">Go Back To Home Page!</button>    
+        </a>
+        </center>
+
+    <script>
+
+        function conversion(){
+        
+       var num1 = document.getElementById("Celsius").value;
+        document.getElementById("conversion").innerHTML = (9/5 * num1) +32;
+
+        }
+
+    </script>
+    </body>    
+</html>
